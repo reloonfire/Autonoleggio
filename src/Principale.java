@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 
 public class Principale {
 
@@ -10,7 +11,15 @@ public class Principale {
 		av.aggiungiVeicolo(v);
 		av.stampaElenco();
 		
-		System.out.println(v.getDettagli());
+		ArchivioNoleggi an = new ArchivioNoleggi(10);
+		
+		an.aggiungiNoleggio(new Noleggio(v, LocalDate.of(2018,10,4), LocalDate.of(2018, 12, 2)));
+		if (an.isNoleggiabile(v, LocalDate.of(2018, 11, 1))) {
+			System.out.println("Noleggiabile");
+		} else {
+			System.out.println("occupata");
+		}
+		an.stampaElenco();
 	}
 
 }

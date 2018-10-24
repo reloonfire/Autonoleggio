@@ -2,6 +2,20 @@
 public class Veicolo {
 	private String marca;
 	private String modello;
+	private int cc;
+	private String colore;
+	private String tipoAlimentazione;
+	private int numeroPosti;
+	
+	public Veicolo(String marca, String modello, int cc, String colore, String tipoAlimentazione, int numeroPosti) {
+		this.marca = marca;
+		this.modello = modello;
+		this.cc = cc;
+		this.colore = colore;
+		this.tipoAlimentazione = tipoAlimentazione;
+		this.numeroPosti = numeroPosti;
+	}
+
 	/**
 	 * @return the marca
 	 */
@@ -42,20 +56,6 @@ public class Veicolo {
 	 */
 	public int getNumeroPosti() {
 		return numeroPosti;
-	}
-
-	private int cc;
-	private String colore;
-	private String tipoAlimentazione;
-	private int numeroPosti;
-	
-	public Veicolo(String marca, String modello, int cc, String colore, String tipoAlimentazione, int numeroPosti) {
-		this.marca = marca;
-		this.modello = modello;
-		this.cc = cc;
-		this.colore = colore;
-		this.tipoAlimentazione = tipoAlimentazione;
-		this.numeroPosti = numeroPosti;
 	}
 
 	/* (non-Javadoc)

@@ -10,11 +10,11 @@ public class ArchivioVeicoli {
 	
 	public boolean aggiungiVeicolo(Veicolo v) {
 		if(indice < archivioVeicoli.length) {
-		archivioVeicoli [indice]= v;
-		indice++;
-		return true;
+			archivioVeicoli [indice]= v;
+			indice++;
+			return true;
 		}
-	return false;
+		return false;
 	}
 	public void stampaElenco() {
 		for(Veicolo v: archivioVeicoli) {
